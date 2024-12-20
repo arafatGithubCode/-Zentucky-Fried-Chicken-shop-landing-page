@@ -1,0 +1,16 @@
+{
+  "name": "zentucky-fried-chicken",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
