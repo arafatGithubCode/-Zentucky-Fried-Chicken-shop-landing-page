@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
     <!-- icons -->
     <link
       rel="stylesheet"
@@ -583,7 +587,85 @@
       </div>
     </section>
 
+    <!-- SECTION THREE: ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div
+            data-aos="fade-right"
+            class="col-lg-6 intros text-end align-content-center"
+          >
+            <div class="video-box">
+              <img
+                src="./assets/images/about-us.jpg"
+                alt="video illutration"
+                class="img-fluid rounded"
+              />
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
+            </div>
+          </div>
+          <div data-aos="fade-left" class="col-lg-6 text-start">
+            <h2 class="about--title">some interesting facts</h2>
+            <h1 class="about--sub-head">
+              Lorem ipsum dolor sit am et consectetur adipis
+            </h1>
+            <p class="lead about--short-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              dapibus fermentum neque sagittis aliquam. Cras congue, sapien quis
+              rutrum dapibus, orci justo blandit neque
+            </p>
+            <p class="lead about--long-desc">
+              lorem eros viverra justo, sit amet fringilla risus risus tempus
+              tortor. Vestibulum a velit quis orci porttitor euismod.
+              Suspendisse in odio purus. Pellentesque venenatis dapibus sem.
+              Suspendisse a ante ut justo imperdiet imperdiet a non felis.
+            </p>
+            <div class="about__list">
+              <div class="about__item">
+                <i class="fa-solid fa-check"></i>
+                <p>Quality Food</p>
+              </div>
+              <div class="about__item">
+                <i class="fa-solid fa-check"></i>
+                <p>Fast Delivery</p>
+              </div>
+              <div class="about__item">
+                <i class="fa-solid fa-check"></i>
+                <p>24/7 Support</p>
+              </div>
+              <div class="about__item">
+                <i class="fa-solid fa-check"></i>
+                <p>Best Price</p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-primary rounded-pill"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- scripts -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,66 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.about {
+  background: url("../../assets/images/slider_bg.jpg") repeat center center /
+    cover;
+  padding: 50px 0;
+
+  .video-box {
+    position: relative;
+
+    a {
+      @include absoluteCenter;
+
+      span {
+        i {
+          font-size: 6rem;
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__item {
+    @include flex-center;
+    column-gap: 5px;
+
+    i {
+      transform: translateY(-5px);
+      color: $white;
+      font-size: 16px;
+    }
+
+    p {
+      color: $white;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid $white;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+
+  &--border-1 {
+    animation-delay: 1s;
+  }
+  &--border-2 {
+    animation-delay: 1.5s;
+  }
+}

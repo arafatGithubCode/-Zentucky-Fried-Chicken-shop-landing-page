@@ -7,6 +7,14 @@
   align-items: center;
 }
 
+// ABSOLUTE CENTER MIXIN
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 // GRADIENT MIXIN
 @mixin gradient {
   background: linear-gradient(to right, rgba($secondary, 1), rgba($primary, 1));

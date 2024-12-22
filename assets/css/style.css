@@ -11844,6 +11844,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 .btn-rounded {
   position: relative;
   padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
@@ -11985,6 +11995,30 @@ textarea.form-control-lg {
   .carousel__get-in-touch h2 {
     font-size: 1.5rem;
   }
+}
+
+.about--title {
+  font-size: 1.5rem;
+  font-family: "Arizonia", cursive;
+  padding: 10px 0 10px 0;
+  line-height: 1.1;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .about--title {
+    font-size: 2rem;
+  }
+}
+.about--short-desc, .about--long-desc {
+  font-size: 1rem;
+  font-family: "Montserrat-Light";
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 20px;
+}
+.about--sub-head {
+  color: rgba(255, 204, 2, 0.9);
 }
 
 .hero {
@@ -12153,6 +12187,64 @@ textarea.form-control-lg {
 }
 .category__item:hover i {
   color: #fff;
+}
+
+.about {
+  background: url("../../assets/images/slider_bg.jpg") repeat center center/cover;
+  padding: 50px 0;
+}
+.about .video-box {
+  position: relative;
+}
+.about .video-box a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about .video-box a span i {
+  font-size: 6rem;
+  color: #ffcc02;
+}
+.about__list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.about__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+.about__item i {
+  transform: translateY(-5px);
+  color: #fff;
+  font-size: 16px;
+}
+.about__item p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid #fff;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+}
+.border-animation--border-1 {
+  animation-delay: 1s;
+}
+.border-animation--border-2 {
+  animation-delay: 1.5s;
 }
 
 /*# sourceMappingURL=style.css.map */

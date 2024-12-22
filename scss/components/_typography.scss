@@ -90,3 +90,31 @@
     font-size: 1.5rem;
   }
 }
+
+.about {
+  &--title {
+    font-size: 1.5rem;
+    font-family: "Arizonia", cursive;
+    padding: 10px 0 10px 0;
+    line-height: 1.1;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $white;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
+  }
+
+  &--short-desc,
+  &--long-desc {
+    font-size: 1rem;
+    font-family: "Montserrat-Light";
+    color: rgba($white, 0.9);
+    margin-top: 20px;
+  }
+
+  &--sub-head {
+    color: rgba($primary, 0.9);
+  }
+}
