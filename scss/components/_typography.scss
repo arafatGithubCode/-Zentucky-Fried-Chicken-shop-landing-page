@@ -1,0 +1,92 @@
+// _typography.scss
+
+@use "../custom" as *;
+
+.sub-header__address p,
+.sub-header__phone p,
+.sub-header__time p {
+  color: rgba($white, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-family: Montserrat-Bold;
+  text-transform: capitalize;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0.15rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover::after {
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      width: 0;
+    }
+  }
+}
+
+.carousel__details .item_name {
+  font-weight: normal;
+  font-family: "ChunkFiveEx";
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+    width: 98px;
+    height: 4px;
+    background-color: $primary;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-align: end;
+  }
+}
+
+.carousel__details .item_info {
+  font-size: 1rem;
+  font-family: "Montserrat-Light";
+  margin-top: 10px;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    text-align: end;
+  }
+}
+
+.carousel__get-in-touch h2 {
+  font-size: 3rem;
+  color: rgba($primary, 0.8);
+
+  @include media-breakpoint-down(md) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
