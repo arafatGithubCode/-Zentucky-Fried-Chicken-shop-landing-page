@@ -2,9 +2,21 @@
 @use "../components/mixins" as *;
 
 .about {
-  background: url("../../assets/images/slider_bg.jpg") repeat center center /
-    cover;
+  position: relative;
   padding: 50px 0;
+
+  .hold-img {
+    @include absoluteZero;
+
+    background: url("../../assets/images/about.jpg") repeat center center /
+      cover;
+
+    .overlay {
+      @include absoluteZero;
+
+      background-color: rgba($secondary, 0.8);
+    }
+  }
 
   .video-box {
     position: relative;

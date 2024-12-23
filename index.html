@@ -28,23 +28,8 @@
     <!-- SECTION ONE: HERO -->
     <section id="hero" class="hero">
       <div class="container">
-        <!-- START THE SUB-HEADER -->
-        <div class="sub-header d-none d-md-flex">
-          <div class="sub-header__address">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>1234 Main Street, Anytown, USA</p>
-          </div>
-          <div class="sub-header__phone">
-            <i class="fas fa-phone"></i>
-            <p>1-800-123-4567</p>
-          </div>
-          <div class="sub-header__time">
-            <i class="fas fa-clock"></i>
-            <p>Mon-Sat: 11am-10pm, Sun: 11am-9pm</p>
-          </div>
-        </div>
         <!-- START THE MAIN-HEADER -->
-        <nav class="navbar navbar-expand-lg navbar-dark menu shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img
@@ -589,6 +574,9 @@
 
     <!-- SECTION THREE: ABOUT -->
     <section class="about" id="about">
+      <div class="hold-img">
+        <div class="overlay"></div>
+      </div>
       <div class="container">
         <div class="row">
           <div
@@ -1546,7 +1534,28 @@
       </div>
     </section>
 
-    <!-- SECTION SEVEN: TESTIMONIAL -->
+    <!-- SECTION SEVEN: TIMING -->
+    <section
+      class="timing-section d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <div class="container">
+        <h2 class="mb-4">Opening and Closing Times</h2>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <i class="fas fa-clock fa-2x mb-2"></i>
+            <p class="fw-bold">Opening Time:</p>
+            <p>Monday - Sunday: 10:00 AM</p>
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="fas fa-clock fa-2x mb-2"></i>
+            <p class="fw-bold">Closing Time:</p>
+            <p>Monday - Sunday: 11:00 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION EIGHT: TESTIMONIAL -->
     <section id="testimonials" class="testimonials">
       <svg
         class="testimonials__wave-one"
@@ -1726,6 +1735,187 @@
       </div>
     </section>
 
+    <!-- SECTION NINE: GALLERY -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">Our Gallery</h1>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <div class="gallery__wrapper">
+          <!-- Box Wrappers -->
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-1.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-1.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-2.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-2.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-3.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-3.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-4.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-4.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-5.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-5.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-6.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-6.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-7.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-7.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div
+            class="box-wrapper"
+            data-bs-toggle="modal"
+            data-bs-target="#galleryModal"
+            data-img-src="./assets/images/gallery-8.jpg"
+          >
+            <div class="box">
+              <div class="overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </div>
+              <img
+                src="./assets/images/gallery-8.jpg"
+                alt="chicken"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Single Modal -->
+          <div
+            class="modal fade"
+            id="galleryModal"
+            tabindex="-1"
+            aria-labelledby="galleryModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <i
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  class="fa-solid fa-xmark"
+                ></i>
+                <img
+                  src=""
+                  alt="gallery image"
+                  class="img-fluid"
+                  id="galleryModalImage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- scripts -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -1733,6 +1923,19 @@
       AOS.init({
         duration: 1200,
         once: true,
+      });
+
+      // Dynamic Modal Content Script
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("galleryModal");
+        const modalImage = document.getElementById("galleryModalImage");
+
+        document.querySelectorAll(".box-wrapper").forEach((box) => {
+          box.addEventListener("click", () => {
+            const imgSrc = box.getAttribute("data-img-src");
+            modalImage.src = imgSrc;
+          });
+        });
       });
     </script>
   </body>

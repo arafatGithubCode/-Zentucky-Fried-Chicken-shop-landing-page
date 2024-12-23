@@ -9,27 +9,8 @@
   width: 100%;
   height: auto;
 
-  .sub-header {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    column-gap: 20px;
-
-    &__address,
-    &__phone,
-    &__time {
-      @include flex-center;
-
-      i {
-        color: $primary;
-        margin-right: 7px;
-        font-size: 18px;
-        transform: translateY(-5px);
-      }
-    }
-  }
-
   .menu {
+    background: linear-gradient(to right, #990100, #db0004);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
     .navbar-brand {
@@ -74,7 +55,7 @@
 
   .carousel {
     position: relative;
-    padding: 0 50px 0 0;
+    padding: 100px 50px 0 0;
 
     &-control-prev,
     &-control-next {
