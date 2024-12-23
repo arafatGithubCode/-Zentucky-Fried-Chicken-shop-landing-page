@@ -1,0 +1,30 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.download-app {
+  position: relative;
+  overflow: hidden;
+  background: url("../../assets/images/apps.jpg") no-repeat center center /
+    cover;
+  height: 50vh;
+
+  .wrapper {
+    @include absoluteCenter;
+    background-color: rgba($secondary, 0.6);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    .app-cta {
+      @include flex-center;
+      column-gap: 10px;
+
+      a {
+        transition: transform 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}

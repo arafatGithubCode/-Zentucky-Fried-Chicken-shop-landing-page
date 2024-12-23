@@ -178,3 +178,33 @@
     }
   }
 }
+
+.download-app {
+  .wrapper {
+    .title {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 2rem;
+      color: $white;
+      text-transform: uppercase;
+      margin: 0;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 1rem;
+      }
+    }
+    .desc {
+      font-size: 1rem;
+      text-transform: lowercase;
+      color: rgba($white, 0.8);
+      text-align: center;
+      max-width: 300px;
+      line-height: 1;
+      margin: 0 auto;
+      padding-bottom: 1rem;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
