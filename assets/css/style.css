@@ -12021,6 +12021,61 @@ textarea.form-control-lg {
   color: rgba(255, 204, 2, 0.9);
 }
 
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffcc02;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: #ffcc02;
+}
+
+.highlight .title {
+  font-size: 1.5rem;
+  font-family: "Arizonia", cursive;
+  margin-bottom: 2px;
+  line-height: 1.1;
+  text-transform: lowercase;
+  font-style: italic;
+  color: #ffcc02;
+}
+.highlight .sub-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+  margin: 0.5rem 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .highlight .sub-title {
+    font-size: 1.5rem;
+  }
+}
+.highlight .desc {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: none;
+  text-align: justify;
+}
+.highlight a {
+  transition: color 0.3s ease;
+}
+.highlight a:hover {
+  color: #fff;
+}
+
 .hero {
   background: url("../../assets/images/slider_bg.jpg") repeat center center/cover;
   width: 100%;
@@ -12245,6 +12300,196 @@ textarea.form-control-lg {
 }
 .border-animation--border-2 {
   animation-delay: 1.5s;
+}
+
+.menus {
+  background-color: #f1f1f1;
+  position: relative;
+  padding: 50px 0;
+}
+.menus .menu__item {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  padding-top: 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1), -1px -1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.menus .menu__item__img-wrapper {
+  padding: 10px;
+  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menus .menu__item .menu__content {
+  padding: 10px 0;
+  background-color: rgba(255, 204, 2, 0.05);
+  text-align: center;
+}
+.menus .menu__item .menu__content .food-name {
+  font-size: 16px;
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0;
+}
+.menus .menu__item .menu__content .sz {
+  color: #a3a3a3;
+  margin: 0;
+  padding: 5px 0;
+}
+.menus .menu__item .menu__content .price {
+  color: #820000;
+  font-size: 18px;
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0;
+}
+.menus .menu__item .menu__content .price del {
+  color: #a3a3a3;
+  padding-left: 5px;
+}
+.menus .menu__item .menu__content .menu__CTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  margin: 10px auto;
+}
+.menus .menu__item .menu__content .menu__CTA a {
+  flex: 1;
+  padding: 5px 20px;
+  transform: all 0.3s;
+}
+.menus .menu__item .menu__content .menu__CTA a:hover {
+  background-color: #ffcc02;
+  color: #fff;
+}
+.menus .menu__item .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  right: 0;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  text-align: center;
+  background-color: rgba(130, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px;
+}
+.menus .menu__item:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+.menus .menu__item:hover .description {
+  transform: translateY(0);
+}
+
+.highlight {
+  position: relative;
+  padding: 50px 0;
+}
+.highlight__main {
+  position: relative;
+  overflow: hidden;
+}
+.highlight__main .wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.highlight__main .wrapper .hold-img {
+  background: url("../../assets/images/img6.jpg") no-repeat center center/cover;
+  transition: transform 8s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.highlight__main .wrapper .hold-img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.highlight__main .wrapper .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.highlight__main .wrapper:hover .hold-img {
+  transform: scale(1.15);
+}
+.highlight__half-block1 {
+  position: relative;
+}
+.highlight__half-block1 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
+}
+.highlight__half-block2 {
+  position: relative;
+}
+.highlight__half-block2 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem;
+}
+.highlight__full-block {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.highlight__full-block .hold-img {
+  background: url("../../assets/images/img9.jpg") no-repeat center center/cover;
+  transition: transform 8s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.highlight__full-block .hold-img .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.highlight__full-block .content {
+  padding: 2.5rem 0.5rem 1rem 0.5rem;
+}
+.highlight__full-block .food-image {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.highlight__full-block:hover .hold-img {
+  transform: scale(1.15);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -118,3 +118,63 @@
     color: rgba($primary, 0.9);
   }
 }
+
+// HEADING LINE
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: $primary;
+}
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: $primary;
+}
+
+.highlight {
+  .title {
+    font-size: 1.5rem;
+    font-family: "Arizonia", cursive;
+    margin-bottom: 2px;
+    line-height: 1.1;
+    text-transform: lowercase;
+    font-style: italic;
+    color: $primary;
+  }
+
+  .sub-title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: $black;
+    margin: 0.5rem 0;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .desc {
+    font-size: 1rem;
+    color: rgba($black, 0.8);
+    text-transform: none;
+    text-align: justify;
+  }
+
+  a {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

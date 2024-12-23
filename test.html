@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Menu</title>
+    <!-- Link CSS or any library if needed -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- AOS Animation Library (Optional) -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container my-4">
+      <h1 class="text-center mb-5">Dynamic Menu Example</h1>
+      <!-- Tab Navigation -->
+      <ul class="nav nav-tabs" id="foodTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="chicken-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#chicken"
+            type="button"
+            role="tab"
+            aria-controls="chicken"
+            aria-selected="true"
+          >
+            Chicken
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pizza-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#pizza"
+            type="button"
+            role="tab"
+            aria-controls="pizza"
+            aria-selected="false"
+          >
+            Pizza
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="drinks-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#drinks"
+            type="button"
+            role="tab"
+            aria-controls="drinks"
+            aria-selected="false"
+          >
+            Drinks
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="burger-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#burger"
+            type="button"
+            role="tab"
+            aria-controls="burger"
+            aria-selected="false"
+          >
+            Burger
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="friedChicken-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#friedChicken"
+            type="button"
+            role="tab"
+            aria-controls="friedChicken"
+            aria-selected="false"
+          >
+            Fried Chicken
+          </button>
+        </li>
+      </ul>
+      <!-- Tab Content -->
+      <div class="tab-content" id="foodTabsContent">
+        <!-- Chicken Tab Pane -->
+        <div
+          class="tab-pane fade show active"
+          id="chicken"
+          role="tabpanel"
+          aria-labelledby="chicken-tab"
+        >
+          <div class="row"></div>
+        </div>
+        <!-- Pizza Tab Pane -->
+        <div
+          class="tab-pane fade"
+          id="pizza"
+          role="tabpanel"
+          aria-labelledby="pizza-tab"
+        >
+          <div class="row"></div>
+        </div>
+        <!-- Drinks Tab Pane -->
+        <div
+          class="tab-pane fade"
+          id="drinks"
+          role="tabpanel"
+          aria-labelledby="drinks-tab"
+        >
+          <div class="row"></div>
+        </div>
+        <!-- Burger Tab Pane -->
+        <div
+          class="tab-pane fade"
+          id="burger"
+          role="tabpanel"
+          aria-labelledby="burger-tab"
+        >
+          <div class="row"></div>
+        </div>
+        <!-- Fried Chicken Tab Pane -->
+        <div
+          class="tab-pane fade"
+          id="friedChicken"
+          role="tabpanel"
+          aria-labelledby="friedChicken-tab"
+        >
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
