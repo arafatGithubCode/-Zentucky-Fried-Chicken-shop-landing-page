@@ -11,3 +11,15 @@
     opacity: 0;
   }
 }
+
+@keyframes fadeDownBg {
+  0% {
+    transform: translateY(-50px);
+    background: linear-gradient(to right, #990100, #db0004);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

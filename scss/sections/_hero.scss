@@ -9,9 +9,33 @@
   width: 100%;
   height: auto;
 
+  .sub-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 20px;
+    &__address,
+    &__phone,
+    &__time {
+      @include flex-center;
+      i {
+        color: $primary;
+        margin-right: 7px;
+        font-size: 18px;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
   .menu {
-    background: linear-gradient(to right, #990100, #db0004);
+    &-fade-down-bg {
+      animation: fadeDownBg 0.5s ease forwards;
+      background: linear-gradient(to right, #990100, #db0004);
+    }
+
+    background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     .navbar-brand {
       width: 240px;

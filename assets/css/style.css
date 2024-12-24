@@ -11854,6 +11854,17 @@ textarea.form-control-lg {
     opacity: 0;
   }
 }
+@keyframes fadeDownBg {
+  0% {
+    transform: translateY(-50px);
+    background: linear-gradient(to right, #990100, #db0004);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .btn-rounded {
   position: relative;
   padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
@@ -12109,9 +12120,31 @@ textarea.form-control-lg {
   width: 100%;
   height: auto;
 }
+.hero .sub-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 20px;
+}
+.hero .sub-header__address, .hero .sub-header__phone, .hero .sub-header__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .sub-header__address i, .hero .sub-header__phone i, .hero .sub-header__time i {
+  color: #ffcc02;
+  margin-right: 7px;
+  font-size: 18px;
+  transform: translateY(-5px);
+}
 .hero .menu {
-  background: linear-gradient(to right, #990100, #db0004);
+  background-color: transparent;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.hero .menu-fade-down-bg {
+  animation: fadeDownBg 0.5s ease forwards;
+  background: linear-gradient(to right, #990100, #db0004);
 }
 .hero .menu .navbar-brand {
   width: 240px;

@@ -22,14 +22,28 @@
     />
     <!-- fonts -->
     <link rel="stylesheet" type="text/css" href="./assets/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/flaticon.css" />
   </head>
   <body>
     <!-- SECTION ONE: HERO -->
     <section id="hero" class="hero">
       <div class="container">
+        <!-- START THE SUB-HEADER -->
+        <div class="sub-header d-none d-md-flex">
+          <div class="sub-header__address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>1234 Main Street, Anytown, USA</p>
+          </div>
+          <div class="sub-header__phone">
+            <i class="fas fa-phone"></i>
+            <p>1-800-123-4567</p>
+          </div>
+          <div class="sub-header__time">
+            <i class="fas fa-clock"></i>
+            <p>Mon-Sat: 11am-10pm, Sun: 11am-9pm</p>
+          </div>
+        </div>
         <!-- START THE MAIN-HEADER -->
-        <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark menu shadow rounded">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img
@@ -1919,24 +1933,6 @@
     <!-- scripts -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200,
-        once: true,
-      });
-
-      // Dynamic Modal Content Script
-      document.addEventListener("DOMContentLoaded", () => {
-        const modal = document.getElementById("galleryModal");
-        const modalImage = document.getElementById("galleryModalImage");
-
-        document.querySelectorAll(".box-wrapper").forEach((box) => {
-          box.addEventListener("click", () => {
-            const imgSrc = box.getAttribute("data-img-src");
-            modalImage.src = imgSrc;
-          });
-        });
-      });
-    </script>
+    <script src="./assets/js/custom.js"></script>
   </body>
 </html>
