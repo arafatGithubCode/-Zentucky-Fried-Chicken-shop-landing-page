@@ -208,3 +208,40 @@
     }
   }
 }
+
+.contact {
+  .title {
+    font-size: 1.5rem;
+    color: $primary;
+    text-transform: capitalize;
+    font-family: "Montserrat-Bold", sans-serif;
+    padding: 1rem 0;
+  }
+}
+
+// DISPLAY 3
+.display-3 {
+  position: relative;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Montserrat-Bold", sans-serif;
+  display: inline-block;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.8rem;
+  }
+}
+
+.highlight-default {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke: 1px $secondary;
+  background-image: linear-gradient(to right, $secondary, $primary);
+}
+.highlight-white {
+  color: $white;
+}

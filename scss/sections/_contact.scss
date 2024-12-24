@@ -1,0 +1,48 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.contact {
+  padding: 50px 0;
+  position: relative;
+
+  .time-wrapper {
+    .row {
+      position: relative;
+    }
+  }
+
+  .line {
+    @include absoluteCenter;
+    width: 25%;
+    border-top: 3px dotted $white;
+  }
+
+  .hold-img {
+    z-index: -1;
+    @include absoluteZero;
+
+    background: url("../../assets/images/contactBg.jpg") no-repeat center center /
+      cover;
+
+    .overlay {
+      @include absoluteZero;
+      background-color: rgba($secondary, 0.8);
+    }
+  }
+
+  &__social-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+
+    i {
+      font-size: 1.5rem;
+      color: $white;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
